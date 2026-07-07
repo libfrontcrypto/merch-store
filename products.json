@@ -61,8 +61,7 @@
     {
       "id": "stack-sats-sticker","name": "Stack Sats Sticker","category": "stickers","price": 5.00,
       "images": [
-        "https://raw.githubusercontent.com/libfrontcrypto/merch-assets/master/stack-sats.png",
-        "https://raw.githubusercontent.com/libfrontcrypto/merch-assets/master/stack-sats-mockup2.png"
+        "https://raw.githubusercontent.com/libfrontcrypto/merch-assets/master/stack-sats.png"
       ],
       "printful_id": 445244922,"sizes": [],
       "description": "3\" die-cut vinyl sticker. Weatherproof."
@@ -70,8 +69,7 @@
     {
       "id": "bitcoin-sunburst-sticker","name": "Bitcoin Sunburst Sticker","category": "stickers","price": 5.00,
       "images": [
-        "https://raw.githubusercontent.com/libfrontcrypto/merch-assets/master/bitcoin-sunburst.png",
-        "https://raw.githubusercontent.com/libfrontcrypto/merch-assets/master/bitcoin-sunburst-mockup2.png"
+        "https://raw.githubusercontent.com/libfrontcrypto/merch-assets/master/bitcoin-sunburst.png"
       ],
       "printful_id": 445244924,"sizes": [],
       "description": "3\" die-cut vinyl sticker. Weatherproof."
@@ -79,8 +77,7 @@
     {
       "id": "lightning-bolt-sticker","name": "Lightning Bolt Sticker","category": "stickers","price": 5.00,
       "images": [
-        "https://raw.githubusercontent.com/libfrontcrypto/merch-assets/master/lightning-bolt.png",
-        "https://raw.githubusercontent.com/libfrontcrypto/merch-assets/master/lightning-bolt-mockup2.png"
+        "https://raw.githubusercontent.com/libfrontcrypto/merch-assets/master/lightning-bolt.png"
       ],
       "printful_id": 445244926,"sizes": [],
       "description": "3\" die-cut vinyl sticker. Weatherproof."
@@ -88,8 +85,7 @@
     {
       "id": "node-runner-sticker","name": "Node Runner Sticker","category": "stickers","price": 5.00,
       "images": [
-        "https://raw.githubusercontent.com/libfrontcrypto/merch-assets/master/node-runner.png",
-        "https://raw.githubusercontent.com/libfrontcrypto/merch-assets/master/node-runner-mockup2.png"
+        "https://raw.githubusercontent.com/libfrontcrypto/merch-assets/master/node-runner.png"
       ],
       "printful_id": 445244927,"sizes": [],
       "description": "3\" die-cut vinyl sticker. Weatherproof."
@@ -97,8 +93,7 @@
     {
       "id": "not-your-keys-sticker","name": "Not Your Keys Sticker","category": "stickers","price": 5.00,
       "images": [
-        "https://raw.githubusercontent.com/libfrontcrypto/merch-assets/master/not-your-keys.png",
-        "https://raw.githubusercontent.com/libfrontcrypto/merch-assets/master/not-your-keys-mockup2.png"
+        "https://raw.githubusercontent.com/libfrontcrypto/merch-assets/master/not-your-keys.png"
       ],
       "printful_id": 445244933,"sizes": [],
       "description": "3\" die-cut vinyl sticker. Weatherproof."
