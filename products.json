@@ -2,11 +2,61 @@
   "api_base": "https://linking-frequently-spiritual-anatomy.trycloudflare.com",
   "store_name": "Operation Stack Sats",
   "currency": "USD",
+  "categories": [
+    {"id": "tees", "name": "Tees", "icon": "👕"},
+    {"id": "stickers", "name": "Stickers", "icon": "🏷️"},
+    {"id": "accessories", "name": "Accessories", "icon": "🧢"}
+  ],
   "products": [
-    {"id":"stack-sats","name":"Stack Sats Tee","price":25.00,"image":"https://raw.githubusercontent.com/libfrontcrypto/merch-assets/master/stack-sats.png","printful_id":445237336},
-    {"id":"bitcoin-sunburst","name":"Bitcoin Sunburst Tee","price":25.00,"image":"https://raw.githubusercontent.com/libfrontcrypto/merch-assets/master/bitcoin-sunburst.png","printful_id":445237328},
-    {"id":"lightning-bolt","name":"Lightning Bolt Tee","price":25.00,"image":"https://raw.githubusercontent.com/libfrontcrypto/merch-assets/master/lightning-bolt.png","printful_id":445237329},
-    {"id":"node-runner","name":"Node Runner Tee","price":25.00,"image":"https://raw.githubusercontent.com/libfrontcrypto/merch-assets/master/node-runner.png","printful_id":445237331},
-    {"id":"not-your-keys","name":"Not Your Keys Tee","price":25.00,"image":"https://raw.githubusercontent.com/libfrontcrypto/merch-assets/master/not-your-keys.png","printful_id":445237334}
+    {
+      "id": "stack-sats",
+      "name": "Stack Sats Tee",
+      "category": "tees",
+      "price": 25.00,
+      "image": "https://raw.githubusercontent.com/libfrontcrypto/merch-assets/master/stack-sats.png",
+      "printful_id": 445237336,
+      "sizes": ["S","M","L","XL","2XL","3XL"],
+      "description": "Keep stacking. Gildan 5000 heavyweight cotton."
+    },
+    {
+      "id": "bitcoin-sunburst",
+      "name": "Bitcoin Sunburst Tee",
+      "category": "tees",
+      "price": 25.00,
+      "image": "https://raw.githubusercontent.com/libfrontcrypto/merch-assets/master/bitcoin-sunburst.png",
+      "printful_id": 445237328,
+      "sizes": ["S","M","L","XL","2XL","3XL"],
+      "description": "The ₿ rises. Gildan 5000 heavyweight cotton."
+    },
+    {
+      "id": "lightning-bolt",
+      "name": "Lightning Bolt Tee",
+      "category": "tees",
+      "price": 25.00,
+      "image": "https://raw.githubusercontent.com/libfrontcrypto/merch-assets/master/lightning-bolt.png",
+      "printful_id": 445237329,
+      "sizes": ["S","M","L","XL","2XL","3XL"],
+      "description": "Instant settlement energy. Gildan 5000 heavyweight cotton."
+    },
+    {
+      "id": "node-runner",
+      "name": "Node Runner Tee",
+      "category": "tees",
+      "price": 25.00,
+      "image": "https://raw.githubusercontent.com/libfrontcrypto/merch-assets/master/node-runner.png",
+      "printful_id": 445237331,
+      "sizes": ["S","M","L","XL","2XL","3XL"],
+      "description": "Run the node, secure the network. Gildan 5000."
+    },
+    {
+      "id": "not-your-keys",
+      "name": "Not Your Keys Tee",
+      "category": "tees",
+      "price": 25.00,
+      "image": "https://raw.githubusercontent.com/libfrontcrypto/merch-assets/master/not-your-keys.png",
+      "printful_id": 445237334,
+      "sizes": ["S","M","L","XL","2XL","3XL"],
+      "description": "Self-custody or bust. Gildan 5000 heavyweight cotton."
+    }
   ]
 }
