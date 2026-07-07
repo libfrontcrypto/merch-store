@@ -84,7 +84,7 @@ let activeCategory = "all";
 
 async function init() {
   try {
-    const res = await fetch('products.json');
+    const res = await fetch('products.json?v=' + Date.now());
     storeData = await res.json();
   } catch (e) {
     document.getElementById('grid').innerHTML = `<p class="empty">Failed to load products.</p>`;
