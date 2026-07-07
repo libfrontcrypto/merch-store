@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Operation Stack Sats — Store</title>
+<meta name="description" content="Bitcoin-inspired merch. Every dollar auto-converts to BTC.">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Inter,system-ui,-apple-system,sans-serif;background:#09090b;color:#e4e4e7;min-height:100vh}
+header{background:#131317;border-bottom:1px solid #1f1f23;padding:1.2rem 2rem;text-align:center}
+header h1{font-size:1.2rem;font-weight:700;color:#f59e0b;letter-spacing:-0.3px}
+header p{color:#52525b;font-size:.8rem;margin-top:.2rem}
+.hero{text-align:center;padding:3.5rem 1rem 2rem}
+.hero h2{font-size:2rem;font-weight:700;color:#f59e0b;margin-bottom:.5rem}
+.hero p{color:#71717a;font-size:.95rem;max-width:520px;margin:0 auto;line-height:1.6}
+.hero .btc-note{display:inline-block;margin-top:1rem;padding:.35rem 1rem;background:#1a1a1f;border:1px solid #27272a;border-radius:20px;font-size:.75rem;color:#a1a1aa}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:1.5rem;padding:1rem 2rem 4rem;max-width:1200px;margin:0 auto}
+.card{background:#131317;border:1px solid #1f1f23;border-radius:12px;overflow:hidden;transition:border-color .2s,transform .15s}
+.card:hover{border-color:#f59e0b33;transform:translateY(-1px)}
+.card img{width:100%;height:300px;object-fit:cover;background:#1a1a1f}
+.card-body{padding:1.25rem}
+.card-body h3{font-size:1rem;font-weight:600;margin-bottom:.25rem}
+.card-body .price{font-size:1.4rem;font-weight:700;color:#f59e0b;margin-bottom:.5rem}
+.card-body .desc{font-size:.8rem;color:#71717a;margin-bottom:1rem;line-height:1.4}
+.card-body .tags{display:flex;flex-wrap:wrap;gap:.35rem;margin-bottom:1.1rem}
+.card-body .tag{font-size:.65rem;text-transform:uppercase;letter-spacing:.6px;color:#71717a;background:#1a1a1f;padding:.2rem .55rem;border-radius:4px}
+.buy-btn{width:100%;padding:.75rem;border:none;border-radius:8px;background:#f59e0b;color:#09090b;font-size:.9rem;font-weight:600;cursor:pointer;transition:opacity .15s;letter-spacing:-0.2px}
+.buy-btn:hover{opacity:.88}
+.pay-methods{display:flex;gap:.4rem;justify-content:center;margin-top:.55rem}
+.pay-methods span{font-size:.6rem;text-transform:uppercase;letter-spacing:.5px;color:#52525b;background:#1a1a1f;padding:.15rem .45rem;border-radius:3px}
+footer{text-align:center;padding:2.5rem;color:#3f3f46;font-size:.75rem;border-top:1px solid #1f1f23;line-height:1.8}
+footer a{color:#52525b;text-decoration:none}
+footer a:hover{color:#f59e0b}
+</style>
+</head>
+<body>
+<header>
+<h1>⚡ Operation Stack Sats</h1>
+<p>Bitcoin-inspired merchandise</p>
+</header>
+
+<section class="hero">
+<h2>Stack Sats Merch</h2>
+<p>Premium tees for Bitcoiners. Every purchase auto-converts to BTC — no exceptions.</p>
+<div class="btc-note">💰 100% of revenue → Bitcoin via Strike</div>
+</section>
+
+<div id="grid" class="grid"></div>
+
+<footer>
+Secure checkout by <a href="https://squareup.com">Square</a> · Printed by <a href="https://printful.com">Printful</a> · BTC via <a href="https://strike.me">Strike</a><br>
+<a href="https://github.com/libfrontcrypto/merch-store">View source</a>
+</footer>
+
+<script>
+const API_BASE = "https://linking-frequently-spiritual-anatomy.trycloudflare.com";
+
+async function load() {
+  const grid = document.getElementById('grid');
+  try {
+    const res = await fetch('products.json');
+    const data = await res.json();
+    const products = data.products || [];
+    if (!products.length) {
+      grid.innerHTML = '<p style="text-align:center;color:#71717a;padding:3rem">No products available yet.</p>';
+      return;
+    }
+    grid.innerHTML = products.map(p => `
+      <div class="card">
+        <img src="${p.image}" alt="${p.name}" loading="lazy"
+             onerror="this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22300%22 height=%22300%22><rect fill=%22%23131317%22 width=%22300%22 height=%22300%22/><text fill=%22%233f3f46%22 x=%22150%22 y=%22150%22 text-anchor=%22middle%22 font-size=%2214%22>No Image</text></svg>'">
+        <div class="card-body">
+          <h3>${p.name}</h3>
+          <div class="price">$${p.price.toFixed(2)}</div>
+          <div class="desc">Gildan 5000 · Black · S–3XL · DTG print</div>
+          <div class="tags">
+            <span class="tag">Bitcoin</span><span class="tag">Heavy Cotton</span>
+          </div>
+          <button class="buy-btn" onclick="buy('${p.name}',${p.price})">Buy Now — $${p.price.toFixed(0)}</button>
+          <div class="pay-methods">
+            <span>Card</span><span>Google Pay</span><span>Apple Pay</span>
+          </div>
+        </div>
+      </div>`).join('');
+  } catch (e) {
+    grid.innerHTML = `<p style="text-align:center;color:#ef4444;padding:3rem">Failed to load products: ${e.message}</p>`;
+  }
+}
+
+function buy(name, price) {
+  const url = `${API_BASE}/buy?product=${encodeURIComponent(name)}&price=${price}`;
+  window.location.href = url;
+}
+
+load();
+</script>
+</body>
+</html>

@@ -1,0 +1,12 @@
+{
+  "api_base": "https://linking-frequently-spiritual-anatomy.trycloudflare.com",
+  "store_name": "Operation Stack Sats",
+  "currency": "USD",
+  "products": [
+    {"id":"stack-sats","name":"Stack Sats Tee","price":25.00,"image":"https://raw.githubusercontent.com/libfrontcrypto/merch-assets/master/stack-sats.png","printful_id":445237336},
+    {"id":"bitcoin-sunburst","name":"Bitcoin Sunburst Tee","price":25.00,"image":"https://raw.githubusercontent.com/libfrontcrypto/merch-assets/master/bitcoin-sunburst.png","printful_id":445237328},
+    {"id":"lightning-bolt","name":"Lightning Bolt Tee","price":25.00,"image":"https://raw.githubusercontent.com/libfrontcrypto/merch-assets/master/lightning-bolt.png","printful_id":445237329},
+    {"id":"node-runner","name":"Node Runner Tee","price":25.00,"image":"https://raw.githubusercontent.com/libfrontcrypto/merch-assets/master/node-runner.png","printful_id":445237331},
+    {"id":"not-your-keys","name":"Not Your Keys Tee","price":25.00,"image":"https://raw.githubusercontent.com/libfrontcrypto/merch-assets/master/not-your-keys.png","printful_id":445237334}
+  ]
+}
