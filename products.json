@@ -9,54 +9,99 @@
   ],
   "products": [
     {
-      "id": "stack-sats",
-      "name": "Stack Sats Tee",
-      "category": "tees",
-      "price": 25.00,
-      "image": "https://raw.githubusercontent.com/libfrontcrypto/merch-assets/master/stack-sats.png",
-      "printful_id": 445237336,
-      "sizes": ["S","M","L","XL","2XL","3XL"],
+      "id": "stack-sats-tee","name": "Stack Sats Tee","category": "tees","price": 25.00,
+      "images": [
+        "https://raw.githubusercontent.com/libfrontcrypto/merch-assets/master/stack-sats.png",
+        "https://raw.githubusercontent.com/libfrontcrypto/merch-assets/master/stack-sats-mockup1.png",
+        "https://raw.githubusercontent.com/libfrontcrypto/merch-assets/master/stack-sats-mockup2.png"
+      ],
+      "printful_id": 445237336,"sizes": ["S","M","L","XL","2XL","3XL"],
       "description": "Keep stacking. Gildan 5000 heavyweight cotton."
     },
     {
-      "id": "bitcoin-sunburst",
-      "name": "Bitcoin Sunburst Tee",
-      "category": "tees",
-      "price": 25.00,
-      "image": "https://raw.githubusercontent.com/libfrontcrypto/merch-assets/master/bitcoin-sunburst.png",
-      "printful_id": 445237328,
-      "sizes": ["S","M","L","XL","2XL","3XL"],
+      "id": "bitcoin-sunburst-tee","name": "Bitcoin Sunburst Tee","category": "tees","price": 25.00,
+      "images": [
+        "https://raw.githubusercontent.com/libfrontcrypto/merch-assets/master/bitcoin-sunburst.png",
+        "https://raw.githubusercontent.com/libfrontcrypto/merch-assets/master/bitcoin-sunburst-mockup1.png",
+        "https://raw.githubusercontent.com/libfrontcrypto/merch-assets/master/bitcoin-sunburst-mockup2.png"
+      ],
+      "printful_id": 445237328,"sizes": ["S","M","L","XL","2XL","3XL"],
       "description": "The ₿ rises. Gildan 5000 heavyweight cotton."
     },
     {
-      "id": "lightning-bolt",
-      "name": "Lightning Bolt Tee",
-      "category": "tees",
-      "price": 25.00,
-      "image": "https://raw.githubusercontent.com/libfrontcrypto/merch-assets/master/lightning-bolt.png",
-      "printful_id": 445237329,
-      "sizes": ["S","M","L","XL","2XL","3XL"],
+      "id": "lightning-bolt-tee","name": "Lightning Bolt Tee","category": "tees","price": 25.00,
+      "images": [
+        "https://raw.githubusercontent.com/libfrontcrypto/merch-assets/master/lightning-bolt.png",
+        "https://raw.githubusercontent.com/libfrontcrypto/merch-assets/master/lightning-bolt-mockup1.png",
+        "https://raw.githubusercontent.com/libfrontcrypto/merch-assets/master/lightning-bolt-mockup2.png"
+      ],
+      "printful_id": 445237329,"sizes": ["S","M","L","XL","2XL","3XL"],
       "description": "Instant settlement energy. Gildan 5000 heavyweight cotton."
     },
     {
-      "id": "node-runner",
-      "name": "Node Runner Tee",
-      "category": "tees",
-      "price": 25.00,
-      "image": "https://raw.githubusercontent.com/libfrontcrypto/merch-assets/master/node-runner.png",
-      "printful_id": 445237331,
-      "sizes": ["S","M","L","XL","2XL","3XL"],
+      "id": "node-runner-tee","name": "Node Runner Tee","category": "tees","price": 25.00,
+      "images": [
+        "https://raw.githubusercontent.com/libfrontcrypto/merch-assets/master/node-runner.png",
+        "https://raw.githubusercontent.com/libfrontcrypto/merch-assets/master/node-runner-mockup1.png",
+        "https://raw.githubusercontent.com/libfrontcrypto/merch-assets/master/node-runner-mockup2.png"
+      ],
+      "printful_id": 445237331,"sizes": ["S","M","L","XL","2XL","3XL"],
       "description": "Run the node, secure the network. Gildan 5000."
     },
     {
-      "id": "not-your-keys",
-      "name": "Not Your Keys Tee",
-      "category": "tees",
-      "price": 25.00,
-      "image": "https://raw.githubusercontent.com/libfrontcrypto/merch-assets/master/not-your-keys.png",
-      "printful_id": 445237334,
-      "sizes": ["S","M","L","XL","2XL","3XL"],
+      "id": "not-your-keys-tee","name": "Not Your Keys Tee","category": "tees","price": 25.00,
+      "images": [
+        "https://raw.githubusercontent.com/libfrontcrypto/merch-assets/master/not-your-keys.png",
+        "https://raw.githubusercontent.com/libfrontcrypto/merch-assets/master/not-your-keys-mockup1.png",
+        "https://raw.githubusercontent.com/libfrontcrypto/merch-assets/master/not-your-keys-mockup2.png"
+      ],
+      "printful_id": 445237334,"sizes": ["S","M","L","XL","2XL","3XL"],
       "description": "Self-custody or bust. Gildan 5000 heavyweight cotton."
+    },
+    {
+      "id": "stack-sats-sticker","name": "Stack Sats Sticker","category": "stickers","price": 5.00,
+      "images": [
+        "https://raw.githubusercontent.com/libfrontcrypto/merch-assets/master/stack-sats.png",
+        "https://raw.githubusercontent.com/libfrontcrypto/merch-assets/master/stack-sats-mockup2.png"
+      ],
+      "printful_id": 445244922,"sizes": [],
+      "description": "3\" die-cut vinyl sticker. Weatherproof."
+    },
+    {
+      "id": "bitcoin-sunburst-sticker","name": "Bitcoin Sunburst Sticker","category": "stickers","price": 5.00,
+      "images": [
+        "https://raw.githubusercontent.com/libfrontcrypto/merch-assets/master/bitcoin-sunburst.png",
+        "https://raw.githubusercontent.com/libfrontcrypto/merch-assets/master/bitcoin-sunburst-mockup2.png"
+      ],
+      "printful_id": 445244924,"sizes": [],
+      "description": "3\" die-cut vinyl sticker. Weatherproof."
+    },
+    {
+      "id": "lightning-bolt-sticker","name": "Lightning Bolt Sticker","category": "stickers","price": 5.00,
+      "images": [
+        "https://raw.githubusercontent.com/libfrontcrypto/merch-assets/master/lightning-bolt.png",
+        "https://raw.githubusercontent.com/libfrontcrypto/merch-assets/master/lightning-bolt-mockup2.png"
+      ],
+      "printful_id": 445244926,"sizes": [],
+      "description": "3\" die-cut vinyl sticker. Weatherproof."
+    },
+    {
+      "id": "node-runner-sticker","name": "Node Runner Sticker","category": "stickers","price": 5.00,
+      "images": [
+        "https://raw.githubusercontent.com/libfrontcrypto/merch-assets/master/node-runner.png",
+        "https://raw.githubusercontent.com/libfrontcrypto/merch-assets/master/node-runner-mockup2.png"
+      ],
+      "printful_id": 445244927,"sizes": [],
+      "description": "3\" die-cut vinyl sticker. Weatherproof."
+    },
+    {
+      "id": "not-your-keys-sticker","name": "Not Your Keys Sticker","category": "stickers","price": 5.00,
+      "images": [
+        "https://raw.githubusercontent.com/libfrontcrypto/merch-assets/master/not-your-keys.png",
+        "https://raw.githubusercontent.com/libfrontcrypto/merch-assets/master/not-your-keys-mockup2.png"
+      ],
+      "printful_id": 445244933,"sizes": [],
+      "description": "3\" die-cut vinyl sticker. Weatherproof."
     }
   ]
 }
